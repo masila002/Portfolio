@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis | Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Background Effect Canvas -->
+        <canvas id="bg-canvas"></canvas>
+
+        <header class="main-header">
+            <nav class="glass-nav">
+                <div class="logo">FRANCIS<span class="highlight">.DEV</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </nav>
+            <nav id="mobile-menu" class="mobile-menu">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="profile-image-container">
+                        <img src="images/profile-removebg-preview.png" alt="Francis" class="profile-image">
+                    </div>
+                    <h2 class="glitch" data-text="Welcome">Hello</h2>
+                    <h1>I am <span class="neon-text">Francis</span></h1>
+                    <p class="subtitle">Architecting the Future of Web & Software Systems</p>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="My Cv.pdf" class="btn btn-primary" download>Download CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sections placeholders -->
+            <section id="projects" class="section-padding">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+
+                <h3 class="category-title">Core Systems & Applications</h3>
+                <div class="projects-grid">
+                    <!-- Face Recognition -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/tech_1.png" alt="Face Recognition Dashboard">
+                        </div>
+                        <div class="card-content">
+                            <h3>Face Recognition Attendance</h3>
+                            <p>Advanced attendance system utilizing computer vision for secure and efficient tracking.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>AI/ML</span>
+                            </div>
+                            <a href="https://github.com/masila002/face-recognition-final" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Copy Trading -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/tech_2.png" alt="Deriv Copy Trading Dashboard">
+                        </div>
+                        <div class="card-content">
+                            <h3>Deriv Copy Trading</h3>
+                            <p>Automated trading system supporting 1 master and up to 500 followers with real-time sync.
+                            </p>
+                            <div class="tags">
+                                <span>Node.js</span>
+                                <span>API Integration</span>
+                                <span>WebSockets</span>
+                            </div>
+                            <a href="https://github.com/masila002/deriv_dopy_trading_final" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Forex Course -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/tech_3.png" alt="Forex Learning Platform">
+                        </div>
+                        <div class="card-content">
+                            <h3>Forex Learning Hub</h3>
+                            <p>Educational platform featuring ICT, SMC, and Price Action strategy courses.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>LMS</span>
+                                <span>Video Streaming</span>
+                            </div>
+                            <a href="https://unlimited-trades-academy.vercel.app/" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Wifi Billing -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/wifi.jpg" alt="Wifi Billing System">
+                        </div>
+                        <div class="card-content">
+                            <h3>Wifi Billing System</h3>
+                            <p>Automated billing and bandwidth management solution for ISP startups.</p>
+                            <div class="tags">
+                                <span>Networking</span>
+                                <span>Database</span>
+                                <span>Billing</span>
+                            </div>
+                            <a href="https://github.com/masila002/Wifi-billing-system" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis System -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/data.jpeg" alt="Data Analysis System">
+                        </div>
+                        <div class="card-content">
+                            <h3>Data Analysis System</h3>
+                            <p>A comprehensive web-based data analysis application enabling users to upload Excel/CSV files, clean data, perform exploratory data analysis, create visualizations, and export results.</p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <a href="https://github.com/masila002/Data-analysis-web-application" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="category-title" style="margin-top: 4rem;">Web Development</h3>
+                <div class="projects-grid">
+                    <!-- Barbershop -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/web_1.png" alt="Barbershop Website">
+                        </div>
+                        <div class="card-content">
+                            <h3>Uppercutz Style Hub</h3>
+                            <p>Modern booking and showcase website for a premium barbershop.</p>
+                            <div class="tags">
+                                <span>Frontend</span>
+                                <span>UX/UI</span>
+                            </div>
+                            <a href="https://github.com/masila002/uppercutz-style-hub" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/web_2.png" alt="Restaurant Website">
+                        </div>
+                        <div class="card-content">
+                            <h3>Delta Swahili Dishes</h3>
+                            <p>Restaurant website with menu showcase and reservation capabilities.</p>
+                            <div class="tags">
+                                <span>Frontend</span>
+                                <span>Responsive</span>
+                            </div>
+                            <a href="https://github.com/masila002/Delta-swahili-dishes" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Clothes Shop -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/web_3 (2).png" alt="Fashion Store Website">
+                        </div>
+                        <div class="card-content">
+                            <h3>Mukami Shop</h3>
+                            <p>E-commerce interface for a boutique fashion store.</p>
+                            <div class="tags">
+                                <span>E-commerce</span>
+                                <span>Design</span>
+                            </div>
+                            <a href="https://mukami-clothes-center.vercel.app/" class="project-link"
+                                target="_blank">View Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Lawfirm -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="images/web_4.png" alt="Lawfirm Website">
+                        </div>
+                        <div class="card-content">
+                            <h3>Lawfirm Website</h3>
+                            <p>Professional corporate website for a legal practice.</p>
+                            <div class="tags">
+                                <span>Corporate</span>
+                                <span>Professional</span>
+                            </div>
+                            <a href="https://github.com/masila002/Lawfirm" class="project-link" target="_blank">View
+                                Project <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section-padding">
+                <h2 class="section-title">Technical <span class="highlight">Arsenal</span></h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript </span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML5/CSS3</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">OpenCV</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Architectures</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section-padding">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a passionate Full Stack Developer and a <strong>Computer Science graduate from Kabarak University</strong>. I specialize in building sophisticated systems that bridge the gap between complex requirements and elegant solutions. My expertise spans from <strong>computer vision attendance systems</strong> and <strong>automated trading platforms</strong> handling hundreds of concurrent followers, to comprehensive <strong>data analysis applications</strong> and scalable <strong>billing systems</strong>.</p>
+                        <p>My technical journey involves designing and implementing mission-critical applications across diverse domains—from fintech solutions with real-time WebSocket synchronization to educational platforms for algorithmic trading strategies (ICT, SMC). I'm equally proficient in crafting beautiful, responsive web experiences and building robust backend systems. Whether it's processing large datasets, managing complex state in distributed systems, or creating intuitive user interfaces, I approach each project with a focus on performance, scalability, and clean architecture.</p>
+                        <p>When I'm not architecting systems or debugging code, I'm exploring emerging technologies, analyzing market trends, or contributing to innovative projects that push the boundaries of what's possible.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-padding">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="contact-container">
+                    <form class="contact-form" id="contact-form" method="POST">
+                        <div id="form-message" class="form-message"></div>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                            <a href="https://wa.me/254743053114" target="_blank" class="btn btn-whatsapp">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </form>
+
+                    <div class="social-links">
+                        <p>Connect with me:</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/masila002" class="social-icon">GitHub</a>
+                            <a href="https://www.linkedin.com/in/francis-masila-34111027b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">LinkedIn</a>
+                            <a href="https://x.com/Invisib52073822" class="social-icon">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Francis. Built with <span class="heart">♥</span> and Code.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
